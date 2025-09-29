@@ -46,8 +46,7 @@ jobs:
       env:
         THREATFOX_API_KEY: ${{ secrets.THREATFOX_API_KEY }}
       run: |
-        cd scripts
-        python threatfox_converter.py
+        python scripts/threatfox_converter.py
         
     - name: Commit and push if changed
       run: |
