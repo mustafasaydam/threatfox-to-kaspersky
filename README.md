@@ -1,46 +1,45 @@
 # ThreatFox to Kaspersky IOC Sync
 
-Bu repository, ThreatFox API'ından otomatik olarak IOC'leri çeker ve Kaspersky uyumlu XML formatına dönüştürür.
+Bu repository, ThreatFox API’sinden otomatik olarak IOC (indicator of compromise) çekip Kaspersky uyumlu XML formatına dönüştürür. Anlaşılır ve basit bir şekilde hazırlanmıştır.
 
 ## Özellikler
 
-- 🔄 24 saatte bir otomatik senkronizasyon
-- 🛡️ Kaspersky uyumlu XML çıktısı
-- 📊 Detaylı istatistikler
-- 🔐 Güvenli API anahtar yönetimi
-- 🎯 Malware gruplandırmalı IOC'ler
+- Her gün ThreatFox’tan IOC çekme
+- Kaspersky uyumlu XML çıktısı oluşturma
+- Oluşturulan dosyaları `iocs/` klasöründe saklama
+- Manuel olarak da çalıştırabilme
 
 ## Kurulum
 
-1. **Repository'yi fork edin** veya clone layın
+1. Repository’yi fork edin veya klonlayın.
 
-2. **GitHub Secrets ayarlayın:**
+2. GitHub Secrets ayarlayın:
    - Repository Settings → Secrets and variables → Actions
-   - Yeni secret ekle: `THREATFOX_API_KEY`
-   - Değerini ThreatFox hesabınızdan aldığınız API key ile doldurun
+   - Yeni secret ekleyin: `THREATFOX_API_KEY`
+   - Değer olarak ThreatFox hesabınızdan aldığınız API key’i girin
 
-3. **Workflow'u etkinleştirin:**
-   - Actions tab'ına gidin
-   - "ThreatFox IOC Sync" workflow'unu etkinleştirin
-   - İlk çalıştırmayı manuel olarak başlatın
+3. Workflow’u etkinleştirin:
+   - Actions sekmesine gidin
+   - "ThreatFox IOC Sync" workflow’unu etkinleştirin
+   - İlk çalıştırmayı manuel başlatabilirsiniz
 
 ## Kullanım
 
 ### Otomatik Çalıştırma
-- Workflow her gün UTC 00:00'da otomatik çalışacak
-- Oluşturulan IOC dosyaları `iocs/` dizininde saklanacak
+- Workflow her gün UTC 00:00'da çalışır
+- IOC dosyaları `iocs/` klasöründe saklanır
 
 ### Manuel Çalıştırma
 - Actions → ThreatFox IOC Sync → "Run workflow"
-- İsteğe bağlı gün sayısı seçebilirsiniz
+- Gün sayısını isteğe bağlı olarak seçebilirsiniz
 
-## Çıktı
+## Çıktılar
 
-- `iocs/kaspersky_threatfox_YYYYMMDD_HHMMSS.xml` - Zaman damgalı dosya
-- `iocs/kaspersky_threatfox_latest.xml` - En son dosyaya sembolik link
+- `iocs/kaspersky_threatfox_YYYYMMDD_HHMMSS.xml` — Zaman damgalı dosya  
+- `iocs/kaspersky_threatfox_latest.xml` — En son dosyaya sembolik link
 
 ## Güvenlik
 
-- API anahtarı GitHub Secrets'ta güvenle saklanır
-- IOC'ler public repository'de saklanmaz (opsiyonel)
-- Tüm işlemler GitHub'ın güvenli ortamında çalışır
+- API anahtarı yalnızca GitHub Secrets’ta saklanır
+- IOC’ler opsiyonel olarak public repository’de saklanmayabilir
+- Tüm işlemler GitHub Actions’ın güvenli ortamında çalışır
