@@ -1,0 +1,75 @@
+name: ThreatFox IOC Sync
+
+on:
+  schedule:
+    # 24 saatte bir çalışacak (UTC zamanı)
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Manuel çalıştırma için
+    inputs:
+      days:
+        description: 'Number of days to fetch IOCs for'
+        required: false
+        default: '1'
+        type: choice
+        options:
+        - '1'
+        - '2'
+        - '3'
+
+env:
+  PYTHON_VERSION: '3.9'
+
+jobs:
+  sync-iocs:
+    name: Sync IOCs from ThreatFox
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+        
+    - name: Install dependencies
+      run: |
+        pip install -r scripts/requirements.txt
+        
+    - name: Run ThreatFox IOC Sync
+      id: sync
+      env:
+        THREATFOX_API_KEY: ${{ secrets.THREATFOX_API_KEY }}
+      run: |
+        cd scripts
+        python threatfox_converter.py
+        
+    - name: Commit and push if changed
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add iocs/
+        git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update ThreatFox IOCs [$(date +%Y-%m-%d)] - ${{ steps.sync.outputs.total_iocs }} IOCs" && git push)
+        
+    - name: Create summary
+      run: |
+        echo "## ThreatFox IOC Sync Summary" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "✅ **Successfully synced ${{ steps.sync.outputs.total_iocs }} IOCs**" >> $GITHUB_STEP_SUMMARY
+        echo "📁 **Output file:** ${{ steps.sync.outputs.output_file }}" >> $GITHUB_STEP_SUMMARY
+        echo "🕒 **Last run:** $(date)" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Next Steps:" >> $GITHUB_STEP_SUMMARY
+        echo "1. Download the generated XML file from the \`iocs/\` directory" >> $GITHUB_STEP_SUMMARY
+        echo "2. Import the XML into your Kaspersky product" >> $GITHUB_STEP_SUMMARY
+        echo "3. The workflow will run again in 24 hours automatically" >> $GITHUB_STEP_SUMMARY
+        
+    - name: Upload IOC artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: threatfox-iocs
+        path: iocs/
+        retention-days: 7
