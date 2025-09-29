@@ -1,0 +1,2899 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="2de186ca-22ed-4d62-ad22-228bf97c7abd" last-modified="2025-09-29T07:46:15">
+  <short_description>ThreatFox IOC Collection - 2025-09-29</short_description>
+  <description>Automated IOC import from ThreatFox API via GitHub Actions</description>
+  <authored_by>ThreatFox-GitHub-Actions</authored_by>
+  <authored_date>2025-09-29T07:46:15</authored_date>
+  <definition>
+    <Indicator operator="OR" id="b8a5ec59-8a2e-4e8d-9fab-0fffb55d567c">
+      <Indicator operator="OR" id="30ad90dd-bfee-4ead-b154-f54157d8579c">
+        <Comment>Malware: ClearFake | Threat: Indicator that identifies a malware distribution server (payload delivery) | Count: 87</Comment>
+        <IndicatorItem id="a2bae831-0334-48ca-bba7-1ec07ed39c90" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ef.wzhy1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="17403873-b70c-411f-9393-a0ad0c3200be" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">c5.d-61o.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6cd68eaf-a1cb-4f3f-a283-68d95e943a38" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">do.wzhy1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="50fb84a5-8889-4d19-a2d0-4a2221d32f42" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ed.wzhy1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f29e3749-a6d2-4feb-b18e-24be47c9a7a1" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">l.d-61o.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7e47940c-0d72-4ded-9d2d-202e5284feae" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">r3.bvqu-7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a8470995-37cd-47af-b3b7-61a693bdd7fb" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">da.vwjy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3104379f-d549-400b-9892-804aa9be30c7" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ay.txso1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="67c35651-28b1-41eb-acfa-6877f735dd14" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ba.txso1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d2c48c28-9951-4f70-a664-7b081e030e72" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">bi.vwjy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="763b97dd-9015-47f2-a081-169cb8b41892" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">bo.vwjy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="adf55879-b9c8-461a-aa1d-3ef9f89939ea" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">al.tsqe2.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="108949f8-dad0-4573-b5ba-aa67c0232992" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">am.tvti0.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5a581ab7-8b1f-4e14-b0ff-615044796d2b" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">aw.txso1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c28770bc-af0a-4a55-a22c-15989b73deae" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ar.tvti0.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b4a523be-4800-4ab2-b2ce-604c4acfc0f1" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ax.txso1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ec6b1efc-370f-4a36-bcf8-617757e1809d" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ai.tsqe2.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="77c89911-9078-42cd-88d9-45e3839fb17f" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ah.tsqe2.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="497d93e7-5205-4007-ad0c-d3078bde3d2e" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ae.tsqe2.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="97b2df41-d41c-4dd4-b533-ee0bbb33a166" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ag.tsqe2.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a684b552-d4aa-4bc4-af93-26be3294ca63" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ab.tfpe6.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7cdc7cb5-5174-4483-a9d3-dcf42a5d4784" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ad.tfpe6.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0594329f-5489-440f-9888-ed28dfb77d74" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">aa.tfpe6.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c670231e-2b57-4820-8317-958c8293c82b" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">cm.bvqu-7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2de01c40-c9eb-4bc3-b8b1-1fb7057a5fce" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">a.tfpe6.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1733567a-de2b-4ba5-9fca-88f9f0cb998c" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">u.bvqu-7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a849f12c-7518-4f8c-af65-11378bbfdd44" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">y7.bvqu-7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="338823d6-fd93-465f-9e83-c00c984e8470" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">h1.w-57e.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="282976aa-83e4-4879-8143-02efec8d39f2" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">pz8.w-57e.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a24386e2-b4c8-4fb3-9f80-4c60dcc305ab" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">w4.w-57e.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="88c05e15-bdac-41e4-856b-28139af9e4ec" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">d.w-57e.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6bc935c4-ceb7-4874-ae2d-6af65b9bc0e3" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">t1.t-20y.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="bc5e06f2-fb7c-4457-8aee-d5b72e93553a" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">qz9.t-20y.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6dcdc16a-c0b1-4ad7-b50a-327e95b64ef4" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">v2.t-20y.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c71ce276-1d1a-426f-aceb-5523b018ecca" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">k.t-20y.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f491d8b3-f473-49e8-aa9f-1c4c1bb6da4d" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">t1.e-35w.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="de278a53-9441-4d4e-add6-7d58f1c5f134" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">qz9.e-35w.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9acaf299-82e5-4673-ab0d-a7947b79e26b" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">v2.e-35w.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e1ace510-ef85-40a7-b66b-71cf3d9edb49" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">k.e-35w.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2e5b22ab-b064-4367-ac51-26de221a16f2" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">g4.e-09q.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="50d95272-c84f-4beb-a67b-2a909bacbc0d" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">pm7.e-09q.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="aa4ac1db-bac6-408a-b965-53e9ffe7ac2e" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">k4.e-09q.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7338c144-a053-40ae-a389-5752bfbf77d9" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">y.e-09q.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="bd49bdeb-9540-4553-a2c2-e449368310ab" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">z3.e-91m.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a6f6841f-9bde-4fb7-a0c7-7af804185380" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">qm9.e-91m.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5566b5ec-c6c0-411e-b7a4-a4b0a7d0c470" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">u1.e-91m.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="23703e20-d62a-43b3-95ea-439bb0be1d36" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">h.e-91m.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9ac49852-1d36-42d7-83fd-72491d6bda71" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">r2.a-91n.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1397bb9b-cfed-42d1-9c75-e7464b6dc97b" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ve.bvqu-7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9f3b045f-4276-46f6-9552-7a050e25f0ad" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">c1m.bpva-0.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ba2c0694-b40c-405e-ac69-653c27e475e4" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">p.bvqu-7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9b3b7e09-2620-4174-92e7-346fcc7937a7" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">k8.bvqu-7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3d70daca-32c1-4cc0-88ef-eef15d941af8" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">wz.bpva-0.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1d9284aa-9f67-44d8-8d15-bdf76e06c099" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">q.bpva-0.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9c3e8aba-acac-4717-b290-1913bde17c69" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">h2.bpva-0.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ac8b67b0-8548-4707-a5a0-c89d89fed5ea" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">n4.bpva-0.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9babde3a-ad34-4e78-918f-e00996739167" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">b.bpva-0.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="60da1bc4-e958-4c3e-96d2-3ccfb0b5f1ec" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">xt.bpva-0.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="22a48e17-52e6-418a-8a95-9b578ae57b79" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">wq9.a-91n.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="94c1b179-f617-4400-8688-cbd6543cdba0" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">c7.a-91n.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6d66ed56-3dbc-4434-a2c4-15af6b093dc0" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">x9.hlgy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6e03c501-ccbb-4d94-8351-bb76e55be07b" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">hv.hlgy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a0d1b031-630b-4d62-8961-eda90d7fc52d" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">c2n.hlgy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="834ea3ea-3682-4d06-ba2f-4ac10400bea0" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">n.a-91n.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="559d6453-5444-4142-b037-ad67aadcf500" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">m7.o-61x.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="be9a5ca1-841b-4ab8-8c8a-285036dc910c" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">t.hlgy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a0144b70-c8dc-4337-8db2-2b6396e87da1" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">a.hlgy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="80eeb354-9bfb-4ccf-b9e1-b8782af7a9fc" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">pz.hlgy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5f96aa24-b15f-45dd-a9ff-29e0bc49bff1" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">m7.hlgy7.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="80c223ca-38e4-46d1-a144-919f185f37c7" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">tq1.o-61x.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a5df87e5-7e70-4e46-91cf-303d9a2657a6" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">b2.o-61x.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="abe50c56-bacb-4552-86cc-f003c3fb7d7b" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">x.o-61x.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="018b854b-943c-4f23-8d9b-dda483333091" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">pn.gzva1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="538ccd1b-bc0b-406e-a4a2-a652e2e1b17e" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">z9m.gzva1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="edadf246-5385-4aea-8364-381fdbb1be6f" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">x.gzva1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7fb57f61-f008-4639-afe9-fbfb0a13b43b" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">m2.gzva1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7644f9cf-39e5-405c-aeea-216eea3d83d1" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">qb.gzva1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="979cc090-732b-414e-a2ea-0273c79b4e18" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">e1.a-67x.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a5870ea7-2c6e-4915-a7fb-96b33ee63539" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">qk2.a-67x.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="49c6d53f-2aa1-4a43-9563-cf1437593573" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">u5.a-67x.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0b8ddc36-5da8-4cf1-87b6-0684371c6b6e" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">h3.gzva1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d05a615c-264d-4173-b44e-135a1e6d5fb1" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">r.a-67x.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="503a7492-ccd2-49ba-a1e4-9d7177bdb136" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">m2.gbta9.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cfe526f5-46d3-4bf6-a11c-1846602a37b3" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">t1v.gbta9.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3105700c-347e-4615-b466-20852af99b5a" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">s.gzva1.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7ab07416-c89e-4246-b8b7-b5d5c1066e18" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">z.gbta9.ru</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4f101ecc-bb18-4617-b99f-33a3d0b9eb6a" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">k7.a-91p.ru</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="72084491-cd40-4fea-b706-12186ba37bac">
+        <Comment>Malware: Vidar | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 25</Comment>
+        <IndicatorItem id="4108fedf-774f-4d76-a8c1-a75ba48bb289" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">65.109.242.172:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="667a61c1-7536-4155-830d-c9ac5105eb6a" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ff.liberatorpremiercompany.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e7359d5e-5745-4762-8315-794c82c7e39d" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">xp.liberatorpremiercompany.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f55b0126-9875-4902-bb0c-944b15ee0dbb" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ez.liberatorpremiercompany.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="bccba47d-682c-458c-a3db-1219424d8f13" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">df.liberatorpremiercompany.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="12b500d1-9d79-4e44-8afe-e2b01dfefd1f" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">xs.liberatorpremiercompany.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a903c928-43d6-4984-bd3e-d1eeb68df821" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">pi.liberatorpremiercompany.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9a8fb9f1-ac92-47a3-9ac1-4ce0bd8f7642" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ff.americanmusclecars.eu</Content>
+        </IndicatorItem>
+        <IndicatorItem id="235d37bc-c4c5-48e9-a2d7-08ae31a2a0c8" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">xp.americanmusclecars.eu</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a31d5781-3f30-413c-9ece-e761b8d946c6" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ez.americanmusclecars.eu</Content>
+        </IndicatorItem>
+        <IndicatorItem id="707869bd-7a78-4c09-8edb-cede655c02c3" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">df.americanmusclecars.eu</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6e7ef5f5-6e90-4aea-98df-601b7396f01c" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">xs.alexandraparasca.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="75f5cf96-fabc-4e4d-9238-44ed695c5fad" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">pi.alexandraparasca.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ab58a35a-3590-474d-a4b3-f3979bfb464b" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://xp.americanmusclecars.eu/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a28e6ccc-302c-491f-939a-719da93ed677" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://ez.americanmusclecars.eu/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5f547475-3d9b-485f-a805-e8be83516d22" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://df.americanmusclecars.eu/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="39ea1b1f-7672-4e8c-a133-5e50f2b7bd58" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://xs.alexandraparasca.com/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="54cdf0ae-98cd-494e-adfa-0bbe635d2745" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://pi.alexandraparasca.com/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7d51693b-2227-4333-9642-9ae820d25ed7" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://xp.liberatorpremiercompany.com/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c72b1856-a8e8-4678-a684-3b06a5b17b6f" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://ez.liberatorpremiercompany.com/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fb7e10b6-43aa-468f-becb-3305ff409f9b" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://df.liberatorpremiercompany.com/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="04c2ef1f-5caf-4db9-99cc-fff0b3871e9a" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://xs.liberatorpremiercompany.com/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9938b8ed-1506-4caa-a230-67a3c968bc70" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://pi.liberatorpremiercompany.com/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a641a178-fbd3-4999-89a0-eedd87178a40" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://ff.americanmusclecars.eu/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b344f637-76d4-4d30-a4b7-25b508d29a0d" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://ff.liberatorpremiercompany.com/</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="0066f497-cf57-4d20-81ea-02ff77e27ffe">
+        <Comment>Malware: LokiBot | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="fa1987ee-7ab6-4056-ab8d-2dbe5f306315" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">http://94.154.35.238/mich/five/PvqDq929BSx_A_D_M1n_a.php</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="04bfd14e-4200-4245-bd75-b5cbd2c8da12">
+        <Comment>Malware: Unknown malware | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 16</Comment>
+        <IndicatorItem id="7aff3ab8-1f42-4753-8905-f5097b781490" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">http://178.128.54.210:8888/supershell/login/</Content>
+        </IndicatorItem>
+        <IndicatorItem id="81a1c6be-6381-40b0-8cde-630227f8f8b8" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">pancakewap.co.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="65d4bf22-7d13-40fd-98fb-2326df253fa0" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">198.7.118.134:3333</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c9e2bb88-39cd-4b57-90c5-4f3ff34b16cc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">176.96.131.224:3333</Content>
+        </IndicatorItem>
+        <IndicatorItem id="58e6accc-e1e8-43b8-993e-bc87d938659d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">8.137.23.180:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="671618bd-52f6-4efc-8530-7c14f72478dc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.215.101.230:3333</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2de57fd8-a94d-4a7c-9786-d9b39b11749e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.72.233.182:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="07da4938-8e67-4ab8-ad3d-689a3704569b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.171.97.251:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="50892d8f-e7ae-4096-9c60-bbaa950eabc2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">59.110.18.39:60000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0c9b7c5f-2ce7-4248-bf2b-eac8bf4b9a09" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">65.38.68.230:8443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0a6d86d5-1da3-460f-9f34-ef4788547ce4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">77.8.201.17:7443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4ba1d787-5ab9-4acd-9c4c-30a6d5090a3a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">49.113.76.93:8888</Content>
+        </IndicatorItem>
+        <IndicatorItem id="02963723-b9e9-4f0e-8a84-234cc89f18e0" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">102.117.173.167:7443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="acd24b97-950a-4c0f-bc05-e9d308be11d1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">66.45.248.205:4000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9365c274-0bdd-4189-857c-4b7b9326a6eb" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">104.156.254.226:7443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5bc655dd-0556-41b2-ab22-fe9ddaae7182" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">116.203.40.76:7443</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="c38c9e4a-fa5d-47a5-b84e-a7e30212dfa8">
+        <Comment>Malware: Unknown Stealer | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="5b2d6525-3b38-4f37-8ccc-da795c5de010" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">cyber-hawk.live</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="278457c2-f41a-4698-98d5-a3ad26749a19">
+        <Comment>Malware: Amadey | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="591bf4d6-9d76-4300-a7f9-b6621dd4d55e" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">http://mi.candyendurable.com/kaWt2QXfpPueNM/index.php</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="76051f76-60e2-4706-9fb8-536c1d3813ba">
+        <Comment>Malware: Meterpreter | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 291</Comment>
+        <IndicatorItem id="6291810b-e083-4e3e-b157-b09c1ff490bc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.28.132.197:1311</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f54289fa-0252-4219-b212-bdd451db6e6c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.28.132.197:1961</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f9f1b5fa-e90d-49e8-8094-d6696a480606" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.233.4.237:58394</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f3da56c4-814b-457f-8b89-907908c87022" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.201.9.145:41528</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ccf04345-93ab-4fba-ab83-920496be6f6b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">44.222.212.138:45262</Content>
+        </IndicatorItem>
+        <IndicatorItem id="04e89b84-c9fc-46d0-a742-22b5a71361c8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.51.88.132:18084</Content>
+        </IndicatorItem>
+        <IndicatorItem id="780c70d9-38d1-41a8-95f3-a0a4489cca09" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.180.148.218:3390</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ebbb64c9-885f-4ec0-b063-38d590f1e7bf" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.161.47.77:16993</Content>
+        </IndicatorItem>
+        <IndicatorItem id="36141918-123f-4c8d-b691-04e69a04cd9e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.161.47.77:10443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="26120c22-12d3-476e-8012-d921de55cd51" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.24.179.184:11112</Content>
+        </IndicatorItem>
+        <IndicatorItem id="207fb321-da71-4c42-b401-53c0a970e7d0" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.24.179.184:2762</Content>
+        </IndicatorItem>
+        <IndicatorItem id="141beebf-6f10-4329-a829-ba782b00c4d3" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.223.43.237:10259</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8d2bdd02-3b8c-4ffb-a1b2-50b4f0d10c49" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.245.29.176:8880</Content>
+        </IndicatorItem>
+        <IndicatorItem id="941ea06f-782d-4e89-96ed-34fd40540939" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.233.13.202:4886</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c0a085aa-07ba-4d1b-b57e-3f94c3ab5e44" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.120.153.167:6443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2bfb6e3d-4ea7-4169-8608-4a2c4607c0f9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.120.153.167:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="937033ce-2ba2-4362-8554-de769dc3ffd2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.217.97.28:32919</Content>
+        </IndicatorItem>
+        <IndicatorItem id="630ccb51-f247-477e-9682-6b09bcaa2c0c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">34.207.209.71:8545</Content>
+        </IndicatorItem>
+        <IndicatorItem id="192f397f-40d7-4999-863d-a0303250c72b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">196.74.218.243:2222</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6dc97cc5-b412-4f6a-bf76-ee74a6e0e03c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">176.198.104.41:4444</Content>
+        </IndicatorItem>
+        <IndicatorItem id="bd9f36dc-4ed5-4446-9143-2d259fc832c3" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">31.25.128.212:8080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e2376eb5-5943-48f6-b1a3-a5257383d4f2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.209.70.70:37599</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d619e30e-9e43-45e7-9b49-dc965627fd03" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.198.204.51:8636</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6f72cc8b-e5eb-41ab-b576-d2385a664baa" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.124.171.62:45573</Content>
+        </IndicatorItem>
+        <IndicatorItem id="399fbdcb-c5b9-41ca-8fb0-c9a058cff709" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.160.40.24:37872</Content>
+        </IndicatorItem>
+        <IndicatorItem id="05c8159b-7ca7-4430-a2fc-9227feca0fc8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.209.70.70:9599</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d3077aff-3857-4302-b378-be5a46495049" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.209.70.70:36499</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a5fbbacb-e980-4a41-940b-f5d6437711a7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.198.204.51:42736</Content>
+        </IndicatorItem>
+        <IndicatorItem id="13e284f4-441f-40be-a003-d12f10ea8e3e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.246.198.142:49152</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8e3d8cab-f829-43d0-b540-6d226c824aab" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.131.37.74:20548</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d9b47e19-535f-47f4-9e6f-a6fa099d98bc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.131.37.74:35148</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8ee2aa54-453f-48b9-93cf-47b345b449e7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.60.254.246:4369</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5f5fe6f6-0aac-4268-8dfc-64688da605d6" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.60.254.246:48019</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0e10d31c-cc24-44b8-ac28-ee18b671f4b7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.246.198.142:42652</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4eb65984-adc1-4669-b8a3-1505665cb49d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.212.114.90:38414</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0bb5711a-d286-4a91-9827-75db7e539151" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.96.203.40:5110</Content>
+        </IndicatorItem>
+        <IndicatorItem id="789597e4-10f5-4a99-8b09-fe9513acbebe" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.246.198.142:10252</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4575b434-bbd4-4c26-b2d0-90d01a89e971" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.152.137.132:6443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="00d255b6-c244-4a14-bb10-8c822831e5d5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.152.137.132:10443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d4ef1021-27c6-46c6-a80b-fcf871124862" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.152.137.132:15443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="737b3315-a1a3-4b70-8e97-a53415c87807" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.152.137.132:16993</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7ab133bc-62c0-4f67-9dcd-ecd4f0bb45d5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.152.137.132:47943</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2fdcb77d-383d-44dc-82d9-c004e6b6e999" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.116.65.3:44818</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fc87a13c-b6ef-40c7-b4aa-07be15b6caee" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.152.137.132:4443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e2c03f01-1879-49d2-aad4-cbce4f9ec582" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">157.175.224.72:4841</Content>
+        </IndicatorItem>
+        <IndicatorItem id="bbe1216b-74c8-43aa-aa96-5cc811ed0d15" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.255.28.14:23529</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f40ec3a6-d2c6-44c8-8392-29a8e3aa908f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.47.80.99:1098</Content>
+        </IndicatorItem>
+        <IndicatorItem id="72f6f9a5-680b-4416-ad22-56195431ec0d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.28.191.24:56332</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a73bd3b2-f4c7-45f9-97ad-e73cd4e2a52f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.28.191.24:58432</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8a493d52-df82-40c3-9e3f-0aaf1377c811" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">98.130.121.229:53282</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f368d13e-6716-42fe-8497-edf62d319f76" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.67.20.102:1433</Content>
+        </IndicatorItem>
+        <IndicatorItem id="44929237-269b-4d89-b2db-b91ade9c2966" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">98.130.121.229:832</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8fee1fd8-b887-42cd-b2f3-05e13a7fdca2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.198.103.209:2380</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cde16d36-02e5-41a3-a980-602d09b020f7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.28.191.24:18082</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f0b3fccb-c50a-4c55-aab6-e44a565e6ba0" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">56.155.104.0:7000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="283a2883-79e6-4e5a-b4d2-6e7f390615f3" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">56.155.104.0:18100</Content>
+        </IndicatorItem>
+        <IndicatorItem id="30876410-9e31-4fb6-a082-4291a750fe59" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">56.155.104.0:21850</Content>
+        </IndicatorItem>
+        <IndicatorItem id="65a5b61b-4701-408f-add5-cc0b9a8c204e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.16.66.23:22385</Content>
+        </IndicatorItem>
+        <IndicatorItem id="638aea58-c96e-4bd7-b67e-f81e88eac1e9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.16.66.23:40435</Content>
+        </IndicatorItem>
+        <IndicatorItem id="603814f0-90be-4bda-9b10-16a0ebb8cf6b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.17.85.49:2456</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6a66d585-147a-4428-9520-2bc2fd76649e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.25.76.68:12322</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e8d17a1f-9a6a-42b6-8768-66e07aafb23a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.25.76.68:22722</Content>
+        </IndicatorItem>
+        <IndicatorItem id="818a0a76-89d2-4d80-8602-ea2ed05771dc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">56.155.104.0:250</Content>
+        </IndicatorItem>
+        <IndicatorItem id="639613be-0399-42b3-8d90-d66ee8edf4a7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.229.6.132:2095</Content>
+        </IndicatorItem>
+        <IndicatorItem id="60b90a69-6a86-49a6-a61d-b8460fc4bc35" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">34.245.74.58:18100</Content>
+        </IndicatorItem>
+        <IndicatorItem id="845e6cb7-853a-4f19-95b7-8688222e8ee2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">34.245.74.58:18600</Content>
+        </IndicatorItem>
+        <IndicatorItem id="602f7429-53ed-4e9b-ab5d-199551db08e9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">34.245.74.58:60000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8ba8fded-b8d1-4b9d-bcc6-f02f8652bf59" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.51.190.86:282</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2f5ffaa9-3aa7-4cb6-b08a-dabf842443a2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.56.228.245:6368</Content>
+        </IndicatorItem>
+        <IndicatorItem id="830ecc5d-64d2-4da8-81b3-1eea88a928ed" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.56.228.245:44818</Content>
+        </IndicatorItem>
+        <IndicatorItem id="401dd061-cc9e-4d85-9405-5d12350ffdcd" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.17.159.199:5487</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5887d61b-41a8-4ce4-85eb-13c877e9df69" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.17.159.199:37837</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9679bf93-ee5a-4c02-9352-62aaaa7f7331" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.211.180.18:4242</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f54b319b-1f6e-4bdc-b23f-f8daf3384d7f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.211.180.18:21142</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b81ad96b-e4dd-460e-887f-d674cbd5d91b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">185.156.73.99:3790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="907800bd-81d9-4128-8ae6-71c2f3db8f8c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.236.160.82:5778</Content>
+        </IndicatorItem>
+        <IndicatorItem id="028bc48f-8ff2-46b8-8aed-334b35fa9f86" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.199.28.237:20546</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6219b97a-8495-45ae-bdcd-d16aeae5b262" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.38.105.151:4839</Content>
+        </IndicatorItem>
+        <IndicatorItem id="87952dcb-0b44-4d8c-ae2f-9432cc902543" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.211.180.18:33942</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2cf3b523-2f37-4be1-ab21-67103faaec2b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.135.186.145:2454</Content>
+        </IndicatorItem>
+        <IndicatorItem id="36187909-f956-4cd3-aae1-f2ccdaa71887" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.212.154.121:103</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d2807b03-c10d-4888-a84c-888c7f25ebd9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.212.154.121:2403</Content>
+        </IndicatorItem>
+        <IndicatorItem id="04028d08-ce9e-4b6f-ab1c-9b016ed4c2c1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.44.166.25:18246</Content>
+        </IndicatorItem>
+        <IndicatorItem id="72922062-6ab7-4298-a98e-6fa38bb58fd4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.140.188.236:5986</Content>
+        </IndicatorItem>
+        <IndicatorItem id="89a3a030-32b2-4e93-83c3-042b7d359394" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.44.166.25:40396</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ceeabd2b-0b7e-44be-b3b4-5da1265039a5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.219.64.112:29476</Content>
+        </IndicatorItem>
+        <IndicatorItem id="09c6fb7b-e9f2-4947-b6d8-60abe8d963ba" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.13.139.35:10234</Content>
+        </IndicatorItem>
+        <IndicatorItem id="99971afd-24e6-4dfd-9aa9-869d19e81b05" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.13.139.35:10284</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5e8ea0cf-d43d-496d-9a5a-3e4d7bc5d2c6" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.161.41.95:8008</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a2393959-5e38-4b23-b32e-7e092c1af190" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.63.196.139:119</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c25b427f-9cca-40fc-a736-b520fe224dd2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.118.253.180:43093</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5f8a5ec7-21d2-42f0-8512-30662564d17f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.166.253.161:1913</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3ae89c65-0052-4bf3-9394-ac38851723a2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.166.253.161:1963</Content>
+        </IndicatorItem>
+        <IndicatorItem id="05f46fc7-f074-48be-bea4-393e2ed0f28a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.233.4.237:1194</Content>
+        </IndicatorItem>
+        <IndicatorItem id="79092a22-ddef-44cb-98fd-46edc06c6ced" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.233.4.237:7394</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6e8f4776-8e4e-4a0c-9504-081dc3f5e75a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.84.232.83:5061</Content>
+        </IndicatorItem>
+        <IndicatorItem id="abbe6cd9-9d48-4281-97af-2d3e24213c1d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.84.232.83:9261</Content>
+        </IndicatorItem>
+        <IndicatorItem id="33cd3494-2fe6-4ee5-b241-596a9bc1b6b1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.84.232.83:10261</Content>
+        </IndicatorItem>
+        <IndicatorItem id="271e7735-0706-4375-9e2c-17e8e1015c68" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.38.166.181:18244</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8a791d82-1bb2-408e-8d7f-6e07131d5155" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.8.174.63:6495</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f5569d78-4f5e-4f2f-aac0-f5466bee0331" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.182.247.72:28015</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b528c4e2-7ba2-4764-8b62-8b417c6a23af" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.8.174.63:9445</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b3b49685-9486-47f1-bf91-ab12a6b8084e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.8.174.63:18245</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c531b466-326e-4a07-a6bc-85bbbbb5be04" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.84.232.83:51211</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1af8c0e8-9d82-4def-923f-6dae9ba85640" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.50.115.141:17202</Content>
+        </IndicatorItem>
+        <IndicatorItem id="eaed6499-5af4-42a4-9b98-2d9958780ca4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.184.167.205:8008</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0a8b0a44-7873-4b25-b225-c0fdb9905615" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.184.167.205:10258</Content>
+        </IndicatorItem>
+        <IndicatorItem id="94106a57-245e-418a-a6bb-deaec2cc13eb" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.38.166.181:1244</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c2983f4c-7748-4c8d-9725-9899b5dae147" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">44.222.212.138:11112</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ce2bd00b-d04f-44b8-ac6c-ceb52a57ce7a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.49.75.39:8159</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5e15620c-390d-4434-8132-2aefda701d88" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.162.160.182:56602</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8d329ea5-f331-4072-a53c-5ec9cc66cd5b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.50.115.141:43652</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8b62e7e6-5d59-48fa-a9fd-d0afc96b8d53" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.50.115.141:14452</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c86943fd-fccc-4399-a65c-2dcf36ef5bda" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.152.54.85:44818</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8fb1033e-3677-4d3f-a8c1-98dc862dd5d7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.118.30.231:9201</Content>
+        </IndicatorItem>
+        <IndicatorItem id="23d4fbb6-a5c5-4220-b845-b237f854a210" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.236.39.54:2148</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b3180aee-9dd3-4818-8eb0-f22c44abb6f2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.100.47.150:33486</Content>
+        </IndicatorItem>
+        <IndicatorItem id="44bb0f54-e231-4b57-80bb-8eed656c73c9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.48.108.75:9876</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4ce29b20-daee-4e89-9c3c-46fa28503534" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">186.17.213.66:3790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8c062fcf-f546-4da9-83db-71a5da7bbc30" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">47.129.101.151:2762</Content>
+        </IndicatorItem>
+        <IndicatorItem id="14203e40-aee7-486b-92ba-7858a51ff2ad" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.176.86.55:8081</Content>
+        </IndicatorItem>
+        <IndicatorItem id="05e7fa70-b7ab-4694-b2bc-429fce61ee72" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">185.239.48.205:3790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="43b3de31-2c2d-4f98-811b-4f421c214ed5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.70.246.75:53211</Content>
+        </IndicatorItem>
+        <IndicatorItem id="10ef3c75-1c10-4536-84b2-9e8a6f7de697" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.96.138.72:81</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c33a69dc-f296-4335-883d-8cb376a44535" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.162.189.96:1723</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e8a47710-ad19-4c03-81b9-b303bff59a95" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.21.104.13:44818</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b884ee8e-8460-4dd0-849e-85d769d178db" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">47.129.101.151:1962</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a5451046-7ee9-47a4-8fbb-897769c1416d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.235.103.228:1099</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4a27be13-47b9-4b5b-b503-9a6f1d2f3357" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.249.232.93:45891</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3d02a44d-c789-4383-9f20-bf64634fc4ea" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">157.175.205.251:833</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e8eac36b-2b03-4209-bf8b-1c90ceae503a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">157.175.205.251:9233</Content>
+        </IndicatorItem>
+        <IndicatorItem id="881bcb37-8f5b-4681-85e6-ebea2ee84fb0" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.253.42.141:43716</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7528b34d-cb99-477e-a317-4c43b8506497" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.68.93.191:42444</Content>
+        </IndicatorItem>
+        <IndicatorItem id="21ecda3e-10f9-492c-a7a8-18d60b69498a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.205.230.46:51765</Content>
+        </IndicatorItem>
+        <IndicatorItem id="804c305c-d74f-4e78-9072-47dd3317898c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.169.207.35:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3c0fd94c-f400-481c-8d01-331c4b5987de" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.233.164.89:9297</Content>
+        </IndicatorItem>
+        <IndicatorItem id="783e6a9f-a1b2-4c91-ac49-60cc4a088928" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.160.18.126:1961</Content>
+        </IndicatorItem>
+        <IndicatorItem id="80f19ab6-1d43-4239-a39f-f187308416b7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.160.18.126:5061</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d6e1df15-ff1d-421f-8860-aee68fb2c000" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.160.18.126:54211</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ba653423-4c7f-4cca-8b14-34be0d078aef" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.76.207.138:10260</Content>
+        </IndicatorItem>
+        <IndicatorItem id="47f1884f-48dd-48a0-9c50-0a971623ad56" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.51.175.3:1963</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8d47d62c-01eb-4f6e-a9da-78de6063db99" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.173.248.169:789</Content>
+        </IndicatorItem>
+        <IndicatorItem id="441d9921-0e72-4399-b109-e84a62619fcf" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.173.248.169:7989</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2c1269eb-b901-4bd9-8d75-6bdf94f91829" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.173.248.169:8089</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9f6d1a43-3cf5-4b8e-bc02-556103f45fae" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.208.182.114:22322</Content>
+        </IndicatorItem>
+        <IndicatorItem id="264416a1-a2b7-44f6-a1bf-e7f4b1250ae8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.49.78.246:2403</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ba199d16-6d48-44d3-a1cb-efcb4c38b2c8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.167.99.127:54216</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0410360d-b3b0-41d5-b83d-06c59007d630" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.133.244.74:9445</Content>
+        </IndicatorItem>
+        <IndicatorItem id="62b6b55a-dde4-4f20-86f4-27eb0636e243" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">103.47.113.242:3790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3018d4df-f548-428e-a2bc-82d2e97fc9e3" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.12.178.104:22822</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0210718a-8a71-4f84-bd33-daa94fc59ba9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.201.33.21:1961</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c5bc8e2d-16a4-4527-813c-fc4cc4a4bbab" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.201.33.21:10261</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c68b076b-de9c-4b8a-9dc8-6a644f3c1cf8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.201.33.21:11211</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d7d2e884-b0cc-496a-b530-816cbc87261e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.133.244.74:995</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3e753dc6-9e69-41ba-a82c-e72059d93f4b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.12.178.104:22622</Content>
+        </IndicatorItem>
+        <IndicatorItem id="82d7b8a5-fb5e-4076-9aad-78f2be6d2782" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.12.178.104:22722</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cfb49e95-061a-4ddf-a23c-c4cb710e18cd" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.89.37.251:13483</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c9b76cf0-ed2a-4709-abb3-f85c72e05fe3" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.176.87.53:22722</Content>
+        </IndicatorItem>
+        <IndicatorItem id="aaef8f1f-616b-4ded-bdba-b02b3da51bbf" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.176.87.53:22822</Content>
+        </IndicatorItem>
+        <IndicatorItem id="66c6e2f1-f889-4352-bd90-3b89e2a70466" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.176.87.53:22922</Content>
+        </IndicatorItem>
+        <IndicatorItem id="734c0f8e-72f1-4f23-b8fb-e85ace25d67b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.12.178.104:22122</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f5c4c4f7-2afa-4579-bb49-bce36a237df1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.255.213.128:2404</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2d9bde70-1518-4863-b965-cfb70180a9c2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.152.181.203:15462</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fae1d658-826e-4b77-85ed-7228d5b05af5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">168.245.201.13:3790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6939f239-4c76-4697-b5d5-50f2ef004e60" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">34.253.225.172:19999</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1b0229ed-da0e-4efb-8e11-975e80c6f11f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.60.216.244:5986</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c24c5629-96f1-452d-bf7a-08469d5c2118" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.89.37.251:50083</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3105216b-54e3-4c3f-9f29-00d2ebbb73b1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.17.159.178:17777</Content>
+        </IndicatorItem>
+        <IndicatorItem id="91fed5f9-9df8-4808-896e-98a2edfcab83" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.143.94.138:14266</Content>
+        </IndicatorItem>
+        <IndicatorItem id="741e5dc5-ac83-4a9e-baf1-787b9296724c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.17.159.178:42627</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3eb0877d-c4a8-4ef9-b479-68fd026a0b73" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.193.38.72:3260</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ec88f837-21de-4717-8ecf-1874fd6b968c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.144.252.72:59639</Content>
+        </IndicatorItem>
+        <IndicatorItem id="854efef7-d2c3-4c3a-991a-5ed6dfc91818" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.62.54.110:1234</Content>
+        </IndicatorItem>
+        <IndicatorItem id="85324f44-9470-4073-83a8-4b0abb9183c1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.145.115.250:4841</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fe6d80a9-4898-4590-92fb-3ee3d4821985" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">65.0.100.5:37717</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cfa654de-4193-47c9-b4a3-5dd924a7219a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.223.43.237:31617</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0cf31cb5-6fdc-415b-8421-2bc08744e518" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.79.148.51:5984</Content>
+        </IndicatorItem>
+        <IndicatorItem id="af8735cf-821c-4071-b03d-2da43d06392c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.62.54.110:5984</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d123ea48-690d-4212-9cd0-fe2e1e142721" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.65.173.244:3389</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5c6971d2-b055-4706-88b3-da524402d3ff" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.144.252.72:4839</Content>
+        </IndicatorItem>
+        <IndicatorItem id="237742d6-4e5c-4bf6-b4c9-62ba476b9352" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.222.20.166:5671</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cbf0544c-fa38-4d73-9345-6bc6b43fed8a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.170.61.22:33478</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9d595f52-14f2-4c10-a0e1-8df8b0ae8410" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">65.0.100.5:28417</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2c13eb7c-a1f2-47d6-8ec0-b625833471ee" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.143.172.236:6004</Content>
+        </IndicatorItem>
+        <IndicatorItem id="56346bab-4425-4b2f-84ce-be3574b3b9cb" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.100.42.49:5938</Content>
+        </IndicatorItem>
+        <IndicatorItem id="12a2ce38-5571-4fa8-a112-484ef2eeca27" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.143.172.236:55454</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5eec0f12-bace-4378-8039-24b947694cd2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.100.42.49:35288</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1a87ee9f-0d46-446a-b2fc-281e72695143" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">196.74.207.241:2222</Content>
+        </IndicatorItem>
+        <IndicatorItem id="34e50068-ee9e-4c72-a823-4e3ade82e0be" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">46.62.133.190:3790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="57e6d322-ec56-421d-a43d-0b07585c804e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.79.147.178:41479</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b68e252b-9c58-42cb-bef4-b9c686053181" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.79.147.178:35829</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ec21fa4f-d7cf-465f-bf35-695a8b49406e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.176.53.146:6697</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d3f7bdca-27da-4e7b-854c-261ac0249bcf" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.17.51.141:39086</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f7654b77-a783-4a5b-a6fa-0479e89cbcd6" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.208.163.170:16570</Content>
+        </IndicatorItem>
+        <IndicatorItem id="305cbdac-f969-40ca-bfb1-0adfb06416ba" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.48.114.62:2077</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5414f195-5d3d-4f87-966d-ed740fda9748" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.217.179.172:2628</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5b63900a-cbb4-4632-ab24-a3183da7e5f5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.48.114.62:12077</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f024c631-ef17-4f39-960c-980ab2051452" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.180.148.218:3390</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8b1f9b66-fbb0-4fda-b8a1-c1cec0ac91ee" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.180.148.218:9340</Content>
+        </IndicatorItem>
+        <IndicatorItem id="309603b2-2ee1-4b9e-91f7-0a6f347f300b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.180.148.218:790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1117a186-488e-47c1-b598-3238cf1f70b4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.62.182.226:11112</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ae1f1551-6991-4ded-ac15-d64980697fdb" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.247.190.133:135</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2b3f01b6-cfdc-4058-b953-647d338bec06" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">56.155.124.187:43762</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6295bb05-cfcb-4a4a-adf5-a531f7df1987" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.233.218.179:18246</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9a40da7a-3a91-4fff-8624-52c05214220e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.114.154.14:1911</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ea0e2137-5c56-4c40-a92a-c13bd3e42a36" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.78.46.205:790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="24a61bc6-c1aa-4a18-9306-1296e6d2e3c5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.143.0.129:995</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fcb377e7-4b22-492a-9578-8aeeeae980e8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">99.79.122.138:5310</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fe38b371-bd77-4716-a524-046e2a51d7a2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.50.231.151:11112</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a14f60d3-6edc-484c-b730-9bf48b97c1dd" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">99.79.122.138:10260</Content>
+        </IndicatorItem>
+        <IndicatorItem id="00800f3c-ba45-4161-a92a-345e24c260b5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.50.231.151:21612</Content>
+        </IndicatorItem>
+        <IndicatorItem id="04c799be-f0fc-4507-b92e-33b688889565" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.26.43.100:44819</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ce1ca7b2-57f4-4aa8-b4b2-cff40b8f1eb5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.29.93.56:58909</Content>
+        </IndicatorItem>
+        <IndicatorItem id="35265ca4-89fd-4561-bc8c-0b1407ba28b4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.8.101.190:47407</Content>
+        </IndicatorItem>
+        <IndicatorItem id="09342a6c-e906-4f35-936d-45910052cd29" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.37.216.236:995</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a5877651-4c4f-4d20-bc33-7242a4f895f4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">99.79.122.138:5060</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1e462852-6049-40c4-b7cb-e7e74e331a0f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.8.101.190:6007</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4c526ca3-a853-4369-9251-d50350bb353e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.189.194.86:591</Content>
+        </IndicatorItem>
+        <IndicatorItem id="43ca4e1b-4c37-4127-91b5-dd7d556afa67" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.79.192.179:8792</Content>
+        </IndicatorItem>
+        <IndicatorItem id="505a4b76-44f7-42fa-8ce1-9bb6932c0734" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.162.44.224:389</Content>
+        </IndicatorItem>
+        <IndicatorItem id="abf566f2-d964-4074-842b-83ea9973235f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.152.68.106:59364</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f1c8b1fe-f3de-4408-a391-c2ae2c6d334b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.208.175.231:13136</Content>
+        </IndicatorItem>
+        <IndicatorItem id="06c92b68-6dcc-4574-83d7-fa92de5a3886" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">204.236.170.168:8081</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5c332dfc-1155-46f5-be20-d5363633b078" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.124.160.197:50526</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b3845ffe-6cc7-41c9-9804-bbf2b4347ef3" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">204.236.170.168:16781</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4a5b6a04-3c77-4244-8620-c528175ded7d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">35.152.62.178:1961</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b5e390b7-ae40-43eb-aea6-a93fb8548301" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.99.191.22:591</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1e5f5aa0-ed8f-441b-b85c-8ea9cc02b773" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.162.44.224:4839</Content>
+        </IndicatorItem>
+        <IndicatorItem id="54832cad-7b35-4f8f-92be-557040bda981" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.212.206.166:88</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cdbc601a-8c5a-4a50-9855-a405bc708582" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.212.206.166:8088</Content>
+        </IndicatorItem>
+        <IndicatorItem id="889e382c-720b-4a01-bd9e-4dc0f317c29b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.84.128.132:57139</Content>
+        </IndicatorItem>
+        <IndicatorItem id="115f8022-9e2a-4a0e-b5f1-e8af7013ad82" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.132.41.237:888</Content>
+        </IndicatorItem>
+        <IndicatorItem id="97475115-0601-4a00-b761-248ab80270c4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.78.108.186:8994</Content>
+        </IndicatorItem>
+        <IndicatorItem id="eef11c6e-e2b1-477f-8d9b-64b0053ce2d7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.160.233.238:6697</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8227b50c-fc10-47c0-9db1-325192d40b8d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.203.118.103:1668</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c3069afa-8a52-4ff8-9803-d27ef70de228" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.141.235.69:10002</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1a629ab9-63e8-45e7-89bf-d57e944f237c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">108.136.135.48:58892</Content>
+        </IndicatorItem>
+        <IndicatorItem id="559b3955-c16a-4c4d-bedb-cb5da2cc7ad8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">196.75.83.207:2222</Content>
+        </IndicatorItem>
+        <IndicatorItem id="79640fa7-1f08-480b-8d1f-50edbf239e76" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.229.242.115:51005</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6e538993-e7e4-4a74-893a-ed62179e1fb1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">157.175.205.102:30418</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c97033ec-9d98-4976-b432-0656361d97f4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.85.72.64:1224</Content>
+        </IndicatorItem>
+        <IndicatorItem id="84e20210-a59d-4ee9-87fd-aa27c5bc76ed" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.229.242.115:55555</Content>
+        </IndicatorItem>
+        <IndicatorItem id="813eaa28-ae3c-45ba-a79e-a73457d23bd2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.200.254.10:58603</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ecaf3838-a094-4217-8874-d1f05cad70fc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.101.138.21:19838</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e5b20a8c-417a-4f4d-8f11-f61df3e433b7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.15.2.220:2095</Content>
+        </IndicatorItem>
+        <IndicatorItem id="631d3e22-6221-43b9-9d1a-99ef9ea7a397" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.38.115.89:50805</Content>
+        </IndicatorItem>
+        <IndicatorItem id="34cee4be-0821-4e16-b306-7351cbf20a9e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.177.169.161:44818</Content>
+        </IndicatorItem>
+        <IndicatorItem id="edf1f50f-1ad8-41ed-a521-eb0b811caf14" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.71.35.29:55608</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0a47c5d0-4933-4e74-9073-332fec439433" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.198.233.136:10135</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7c9a284e-ee51-45f6-8881-f6e348b6bb31" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">108.136.117.124:20958</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f37f418d-1db4-43e9-8cdc-0b1d8bf31080" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">34.219.0.204:24787</Content>
+        </IndicatorItem>
+        <IndicatorItem id="09c0f8df-e1a7-49aa-882f-11e718bf94f2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.152.41.28:57722</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c33f7edc-49b3-43c9-8912-097131b58dd5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.226.83.39:8081</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ff0d98f2-72cb-4699-8cda-cf0eb73629df" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.176.178.61:9201</Content>
+        </IndicatorItem>
+        <IndicatorItem id="918aa269-6d5f-4e75-9549-d6dfb090f3ac" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.100.202.20:5985</Content>
+        </IndicatorItem>
+        <IndicatorItem id="70290eed-f472-423a-80b3-2ba7d086c7a5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.15.11.208:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1eaf5884-0e13-4c0e-923c-9e1836b43312" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.160.130.198:2281</Content>
+        </IndicatorItem>
+        <IndicatorItem id="93eeb4a2-22d9-44da-b297-48d28a92daa2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.160.130.198:23731</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f59d85e6-ff48-499f-a1e8-2f0036f1f6d7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.17.42.67:55615</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6eea1992-4e66-411b-a12c-5ad4206c03fa" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.204.30.208:1080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6c15afa7-9a05-4f6c-86e3-73cbc69f6c52" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.204.30.208:9300</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5e8e81ea-ff48-4e4c-b247-79ce0e931d91" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.235.0.14:32524</Content>
+        </IndicatorItem>
+        <IndicatorItem id="25a917c4-2020-45b3-93ac-82fac35a876f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.236.224.234:53282</Content>
+        </IndicatorItem>
+        <IndicatorItem id="573694dc-1bfa-4451-83ae-a79765618881" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.235.0.14:32774</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d2e9a8eb-bf11-400f-8fb0-082e758d7222" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.24.72.103:10260</Content>
+        </IndicatorItem>
+        <IndicatorItem id="26bd32ad-444a-440c-b235-4ad3538a982a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.85.12.41:18244</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c0f987e1-a728-40f6-850c-09c56c822c79" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.17.42.67:15765</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2c8ccbfd-f297-426b-8845-dc092481a62b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.239.146.89:6736</Content>
+        </IndicatorItem>
+        <IndicatorItem id="516b5f1c-5459-4150-b6a8-02ccba457130" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.53.252.41:26131</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c7c16b3f-1efa-4161-a593-6952d8c0cc8d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.99.182.226:55615</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fdc7c8f6-da1f-436d-a8c8-4ce959f0ec87" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.142.36.131:10258</Content>
+        </IndicatorItem>
+        <IndicatorItem id="828f22b3-4726-4f28-8cb2-20f0c4cc9ff7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.216.21.132:4369</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fe01419e-e6c8-46d5-82e3-19941d1678e9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.89.202.8:43979</Content>
+        </IndicatorItem>
+        <IndicatorItem id="48257372-150d-4ddf-bf4b-145516a78b3d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.96.25.10:30056</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4b5cbb26-ed1f-403e-be22-1f9d48a2956c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.112.252.137:4839</Content>
+        </IndicatorItem>
+        <IndicatorItem id="56467c27-2f9f-44da-a0af-f24392db902c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">16.78.82.88:10292</Content>
+        </IndicatorItem>
+        <IndicatorItem id="06d5c365-620c-46f0-877b-ca777cc6696d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.125.61.100:2083</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a3b2d0c8-ca9d-441e-8517-c785c551dd10" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.96.196.233:17778</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4bee4fa9-944a-4d33-85e3-6425d0e93658" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">15.222.64.172:6005</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a442e1c2-74df-4cdb-aaa6-864e38eb2411" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.210.20.212:8443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a58f4bb8-66d4-41a6-a6bc-89cc9920be5e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">34.222.144.143:32064</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ab081d1c-d00f-49da-8f90-13ff216f9490" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.199.159.146:46531</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4aeb600b-233f-401c-9b2a-8a6f662e6ed7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.36.109.188:44096</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b6f53646-069b-4488-8bdc-30807c7ffece" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">51.222.30.245:3790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c91834d5-8681-4a7d-ada5-e08b1a06bc1c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">157.245.220.168:4444</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3b843ba1-a1ae-4ae3-8341-06505ff459e2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">203.245.28.97:8000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="101441a3-4383-4b07-818f-c3d97e6942c7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">5.78.94.35:4444</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8b4fc38f-21b8-49df-bb2b-314663c42036" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.255.118.226:52679</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8caedfcd-4cd9-4c38-b81f-c8d894ad17ce" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">209.38.51.41:4444</Content>
+        </IndicatorItem>
+        <IndicatorItem id="02d3e37e-8aaf-4c48-a2ae-0e9ff3639712" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">211.154.17.118:10011</Content>
+        </IndicatorItem>
+        <IndicatorItem id="dd196da1-2b57-4fbe-870a-c03ba2922dcb" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">139.212.56.55:10001</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="034ce5f7-9e1f-4e2a-884c-8db38a1586e1">
+        <Comment>Malware: Cobalt Strike | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 81</Comment>
+        <IndicatorItem id="d521673d-6277-4ef4-b244-0b282e4ca8cd" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">47.121.31.109:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="78df603f-8b78-41d5-a588-0fa2cc357bcf" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">1.54.147.224:8000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="146be4cf-46f5-4127-b3f2-3452b398c2d8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">98.81.244.133:8080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9dd78bb6-d26a-4c97-b99a-cb262c1c9484" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">121.40.223.126:7777</Content>
+        </IndicatorItem>
+        <IndicatorItem id="de4be93b-f7a6-4cbd-9830-350eb1e4b9f1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">123.57.34.41:5555</Content>
+        </IndicatorItem>
+        <IndicatorItem id="125f30fc-3dae-4176-af48-709c1b7295a6" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">222.255.214.236:800</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fccaa239-a1f2-4b2b-9b66-d00aaac41244" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">209.97.166.232:5000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e3e168e6-cf75-41b1-867a-ec011397f3ae" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">117.72.199.157:4444</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e35fbfd8-9f9c-4e53-8925-41394910766a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">103.124.105.209:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9d79c74f-9e97-4f18-9010-013bfb8cb3df" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">www.micoestan.es</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9305bb95-81e9-4c63-9391-ccf6ebf88ddc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">47.122.119.55:8080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cb3aba80-78f2-4e82-b905-c5b5851d5ba5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">117.72.199.157:8443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="57ce0b47-c291-4170-b9f4-acce88a071e2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">101.133.199.85:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="56aa0a2d-2b4a-4916-a231-2be394d39bef" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">149.104.30.13:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="be283d25-a999-414c-8daa-fbff85124bdc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">138.197.19.216:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1b74f12e-99ed-456c-a65d-5506d34b20d4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">124.220.164.98:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="18f32a38-259a-44f7-8247-6d0ee8d11aa2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">47.239.188.48:8088</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a2e47456-f637-4f9a-acb9-e44f0f14a402" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">123.60.214.58:9201</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3d399983-9057-4603-bd6f-a2f6983596f4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">101.126.23.74:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e7785c80-201d-4e27-9f8c-2bc1b3e337b4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">47.92.102.14:8003</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f5b17d04-71dc-4132-8063-d5ff3eeee90d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">149.104.31.63:8334</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cfff46ac-0a52-401d-9213-942d3e4cceb5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">123.129.229.135:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2a48dad7-77b7-4ca3-90b1-5d16bd6148d7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">43.139.5.84:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="539fa3a1-e4aa-4444-8f05-ded63db563a7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">196.251.115.35:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7c14c89f-d5da-4afb-9d6f-aec43c8dac8c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">123.129.229.135:53389</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2c372fba-1e63-4642-93f2-8544849b7d03" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">8.130.108.245:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="70310f2a-5dd7-4082-9aef-a8bf19af3fb0" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">192.227.235.212:8443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6ce78f9b-0964-4a5a-8cf2-b367b5d6a2f1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">144.91.99.195:8000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d7eb94a7-ba59-4230-b464-48588eab4ee0" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">77.37.65.187:8888</Content>
+        </IndicatorItem>
+        <IndicatorItem id="796ab32e-b722-4c4c-8f66-ab45b4eec973" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">39.100.74.113:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2f8fc123-2a39-46f5-8b98-7ec2ae306013" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">137.184.53.6:17882</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7de4e0b0-a2d8-4a40-a793-32c8f53b4b28" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">8.141.120.99:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fdcd9d98-9510-448a-9032-f2c472c9ed9f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">196.251.70.112:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="099f72c4-02de-4daa-9b04-34d34729fcb7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">8.155.42.155:30001</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4f7d4679-2d1a-46d2-9513-36236f64e934" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">4.201.106.183:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="de83cd60-07ab-4201-ab10-542e34de8fff" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">172.210.138.76:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="226edd5b-4ffe-409a-895f-db7e23bec91d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">128.1.40.187:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c699e5c5-9c6f-4af4-ac64-36c37746a92d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">47.96.123.15:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c70a7956-a8de-4440-9526-494e51c35158" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">134.209.22.212:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cf313ab3-f535-454b-a9e1-576c9077b6e3" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">8.155.42.155:30000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e9bdb694-30ba-4b5d-a835-31bdffb38629" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">193.233.244.34:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="61940247-04ae-4113-8413-2cf46d3a6043" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">159.223.41.3:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6e42de47-2224-4a7f-a144-18eaa0c977ce" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">193.233.244.34:4433</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c875dc9b-d0ca-44fb-9998-5ef802695327" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">42.51.34.56:28011</Content>
+        </IndicatorItem>
+        <IndicatorItem id="69717d7f-e7bf-4d53-9ac1-ab6ff3a95b83" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">8.155.46.242:19284</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d13177ca-1599-41a0-b512-ae92f062bae1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">61.111.244.197:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6cf6ed85-a4e6-435e-9c96-0649f86e8a32" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">23.226.130.224:7443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f3ddcc73-6bdb-42e7-87ea-1d8adbb345a8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">101.201.124.206:8080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="21f409c0-99bd-474f-a229-1147bd652932" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">106.75.13.123:18080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d60db86f-1f24-420a-baed-fd691b66e8cc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">166.88.141.79:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="20390b16-05bf-4a80-9545-8e3e4ed89990" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">39.100.70.170:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="be849138-b9a4-4d38-b11f-786464d30ea0" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">38.38.251.33:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1028d6be-286d-4fde-bc54-34cf1b81e497" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">154.92.15.229:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="958bd4a9-d025-41b5-b484-fbe2c57d371c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">8.152.198.50:8443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ea24ef58-9687-40e0-a577-d6e556b88757" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">106.75.14.190:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="61fc354f-bce0-48f5-af5c-47528bbea658" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">47.98.140.60:50050</Content>
+        </IndicatorItem>
+        <IndicatorItem id="011d8f46-c271-4d47-a8f8-877712588605" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">34.45.14.108:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e2fe2379-f438-4d30-bd07-3bf8a71ba7b9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">52.87.159.219:8080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="eb043a0a-89e0-4e7c-b956-c2740d91979a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.222.23.35:8080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ed09b6a1-84c1-4d82-927e-67b545b751de" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.206.39.157:8080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8488b142-5995-4dc6-be19-95809a638073" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">117.158.148.164:8000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2eef58a9-416c-4771-90d2-b23f02dcfa18" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.90.191.76:8080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="58703d84-4104-40fc-9cec-07a84d675bac" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">107.20.74.120:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d74a1af3-17c0-4e51-889d-869d957130b3" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">68.183.43.104:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4a22b800-f07e-4c0e-b645-db86bc237985" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">123.207.52.54:6443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="be546b9c-9644-4c2d-a2da-b2d93ecdfe05" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">45.204.197.239:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="217b665b-fccb-4827-ab3f-7d838082c093" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.230.127.245:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2a03b9fc-f201-4b5c-85ac-a0c012816280" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">98.84.141.121:8080</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8530b85a-4a9d-4364-8f01-ce62c896e223" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">103.80.17.107:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b8147eda-ed6f-423c-8a5e-fa7d8c177946" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">82.156.235.177:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7f2648f3-ba0a-48de-8410-ac5b8f474a2c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">82.156.235.177:8888</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4b3149ef-8868-4aad-94b4-49301794033b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">154.9.27.102:8888</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6c690c07-c562-49af-8aeb-a4e6ffebecf2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">154.201.93.68:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="db5cf272-ca32-4d9b-b964-71a15d3d243c" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">api.xn--coudflare-0sb.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7b2bc929-9f41-44f7-89df-1683453125cb" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">212.14.244.222:808</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8da07798-a2f4-41a9-a8ba-5b89a4a8aff7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">77.37.65.71:9999</Content>
+        </IndicatorItem>
+        <IndicatorItem id="07881487-e808-436e-b7dc-6ccdf2a33703" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">14.103.172.127:8082</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e6801de4-dbb7-44aa-81a4-487126183a92" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">45.138.74.214:8000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="71b96dc1-b1e3-40da-a41d-b3b04c34392e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">85.192.49.100:53</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cb7280f7-417f-4d03-86e9-c471653b018c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">107.174.232.94:7777</Content>
+        </IndicatorItem>
+        <IndicatorItem id="55f6f3c7-d975-4500-9208-519ef8cc92b0" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">107.174.232.95:7777</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="74c405f1-6d24-4671-888d-3d2a3b2bb54a">
+        <Comment>Malware: XWorm | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 8</Comment>
+        <IndicatorItem id="b6cbde78-3d91-4ca4-a6ae-6e5fa772f5d4" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">sigmaratohio-52009.portmap.host</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8e5d1463-d6e5-4605-b1f2-f4bdc5ac967a" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">hawifo-43198.portmap.host</Content>
+        </IndicatorItem>
+        <IndicatorItem id="30f8d679-c7b9-42c7-8400-426582454f28" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">192.3.198.5:40401</Content>
+        </IndicatorItem>
+        <IndicatorItem id="61122b1f-4de9-46d2-9691-8aa04fab97d8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">82.165.95.31:5058</Content>
+        </IndicatorItem>
+        <IndicatorItem id="811044b4-bc6c-4e8e-ac28-5ed60e81d675" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">193.161.193.99:52009</Content>
+        </IndicatorItem>
+        <IndicatorItem id="00e5e2cc-596a-4c13-bb98-f8409eb1b8d3" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">minimum-integrate.gl.at.ply.gg</Content>
+        </IndicatorItem>
+        <IndicatorItem id="af0b4434-57ee-4aa6-9d85-5993d3a8e30a" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">availability-permalink.gl.at.ply.gg</Content>
+        </IndicatorItem>
+        <IndicatorItem id="336ab848-5d7f-4623-9999-c13643f8fecd" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">skin-tenant.gl.at.ply.gg</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="1484ac14-873e-4c6a-8f23-59c4f0b4253f">
+        <Comment>Malware: Loki Password Stealer (PWS) | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 3</Comment>
+        <IndicatorItem id="5ba9c03d-d26c-487e-ba4a-895a425e3f77" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">94.154.35.238:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="46349a1b-f502-4fbb-854e-843e19497a9a" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">http://94.154.35.238/mich/five/fre.php</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5824947d-c81d-46a1-9b16-f481bccaf41f" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">http://securebrainwork.site/redir/manage/size/fre.php</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="7ab55e44-ff91-4dc9-860f-91e9e3a150f0">
+        <Comment>Malware: Remcos | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 8</Comment>
+        <IndicatorItem id="8d92eafb-3af9-4f52-a232-d0ee1ffc2ca8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">4.228.224.81:4444</Content>
+        </IndicatorItem>
+        <IndicatorItem id="318cd464-aed6-47da-a240-628f4e284ece" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">84.19.175.183:56470</Content>
+        </IndicatorItem>
+        <IndicatorItem id="55762a17-c458-4c21-86d7-50bda5a63024" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">84.19.175.165:56470</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e53f72d0-3e8e-41d9-9e25-0a4ae6aa4927" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">196.251.116.248:2404</Content>
+        </IndicatorItem>
+        <IndicatorItem id="91fb038e-522c-4002-9d24-5646491f546b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">173.195.100.175:1070</Content>
+        </IndicatorItem>
+        <IndicatorItem id="865e2a80-de20-477a-aec7-ca68647088b2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">107.172.135.31:14646</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6cbb5de2-cd68-410b-affd-a8fbe755f49f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">194.26.192.88:2404</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8c6b1cb5-59f6-44cd-aa8a-454e14298ec8" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">172.81.133.231:9911</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="abff2d22-73ed-4512-adb5-8065437ecb7f">
+        <Comment>Malware: DCRat | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 2</Comment>
+        <IndicatorItem id="8709be08-7be7-4775-9511-fbbe91074230" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">178.73.218.9:2003</Content>
+        </IndicatorItem>
+        <IndicatorItem id="35b5e943-ca14-40bc-8d54-29d70a02045e" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">http://80.49.182.145/VideoprocessorApi.php</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="7dba43c1-77be-41c4-a117-01130806da36">
+        <Comment>Malware: AsyncRAT | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 3</Comment>
+        <IndicatorItem id="bb12b661-9dfd-4339-949e-e266f94b15bc" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">185.62.87.191:1411</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5c5e7e9c-e159-4b88-b422-bdd4bd02b7b4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">103.239.66.81:8808</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1ca31ac1-5907-47ff-9a7c-c7de947e3b4f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">199.244.48.235:8808</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="dfa2e0fe-70ac-4f18-ac29-9815bc68b809">
+        <Comment>Malware: MASS Logger | Threat: Indicator that identifies a malware sample (payload) | Count: 1</Comment>
+        <IndicatorItem id="e6efd1e9-72b0-4fba-a961-d63a0da2f54f" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">3fa048cc9dfa86e06aaae2574ddfe34d0e8c7ea130dc31d2c8063a9806f9021b</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="67c42ca4-6b98-4d3a-8580-eb7adad89827">
+        <Comment>Malware: StrelaStealer | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="b7c7d101-26a5-4be5-8d52-842b1a6f00ed" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">1a7875e8687ba510645595d66fca835f</Content>
+        </IndicatorItem>
+        <IndicatorItem id="63444b61-1420-4fd9-bbc6-089116ee93ba" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">568b84b937966af15ebdf4e60781986170da08e4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7f5f9e3d-32a1-4a47-b5ad-c5d67a0e2ddb" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">442ce68e17af6b391f004c0871e10f57a226ac047468150cc89e109311444e41</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="4a2d73c4-a35d-4a44-81f8-13bfca9992ba">
+        <Comment>Malware: Vidar | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="ec32115a-afa1-4141-960f-5eb54fdecfcc" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">790eeb63c477ea1004ba508d4550bcfa5f4a1c39</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1db9889f-7310-4d71-b6a8-775925405c0e" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">90f07c4f9bad794c7499649d98a2302c74a70876526ce76c5853d1d55b45abe8</Content>
+        </IndicatorItem>
+        <IndicatorItem id="211e1cda-b701-4972-9ce6-e1a145fdc4c9" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">806a5adfdb7e097d35c556c958924e33</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="c2053b98-08ba-4354-bf52-2ef9d1d73db7">
+        <Comment>Malware: DarkCloud Stealer | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="abf10f69-6fca-4614-a672-96ca8e85299f" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">fe340cbe70c6d4a380e2ac9f6698e5ab</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ccb174d0-6e48-448f-a2e4-0407fac2dfff" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">9a492b5c0158f2f8c38073f20bb2fb041150edaf</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1f713071-184c-44d8-864b-39d71ed9a0d2" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">95aa51f232eee5bdbe1e7e07b9fa92279dd95dc1168cb183d71b37ce3c561a1a</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="e6883ecd-f832-4532-bb3c-d2ae8af33e9d">
+        <Comment>Malware: KrakenKeylogger | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="54619da5-4269-49ff-ae8e-25899752ecc3" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">6286cf6a7653c3bd92c6cf8f159324abda4a33cd9df6cd9c44813afdcaba96f4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="17309903-e760-4b4a-86cb-eb507b3cb994" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">f2c925692a7a9d067464948adaad9dd1</Content>
+        </IndicatorItem>
+        <IndicatorItem id="22e44c19-2e27-4239-9ace-483d703b2344" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">b703fda15b6f665ce4a220ece7ab65492e2d4c18</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="637e3a36-bfa8-4f19-abb4-6d4b884c27f6">
+        <Comment>Malware: Coinminer | Threat: Indicator that identifies a malware sample (payload) | Count: 9</Comment>
+        <IndicatorItem id="53d813d8-aceb-4c2e-bcc8-a6b3250900e4" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">b95e3577532910b60a240a7d40a2b13553de487c</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c582c3e6-1a47-45a6-bfd2-e029aebbfe4f" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">5a9a77ca9ad180286ee5e3343b1afaee5e54528483170c577c9d6c21140b09f3</Content>
+        </IndicatorItem>
+        <IndicatorItem id="95d7742c-3dbc-471a-b5dc-4df3911807f9" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">dbe1fbd4bc92f882d37786d39d8db480</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c8d5d115-da0d-4fd4-be6c-39affac9dadb" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">cbd13c9f83c862fd2fefdc74dd1f62ba</Content>
+        </IndicatorItem>
+        <IndicatorItem id="677e94cb-f0b3-4aff-b55e-aaa1f9f55a37" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">e07bcd0e3e98037f31300cf21d7898e3ce36ccdb</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d9b96896-bfdd-499d-b604-c61fe2835050" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">320a103b615a4f8ce471ded0af3fd10c3b573c0459d1c376855af6d34c12a90d</Content>
+        </IndicatorItem>
+        <IndicatorItem id="791eeffb-343f-45d4-9f26-7789303ed811" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">b17c75595d50d14192e01636cba46682</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6d37301e-f319-4ab6-a4d9-87f36e729ce1" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">230bb669abcf713f13f02a08afc754d98944da35</Content>
+        </IndicatorItem>
+        <IndicatorItem id="338b3632-9bdb-449a-9bd7-b47e154c07f9" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">450994d60bbaf7bd072677fc1ce9025b9cdefe147ab27105db838358e4e26c84</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="01c24761-b1e2-478b-8703-6e59afc6bb56">
+        <Comment>Malware: NjRAT | Threat: Indicator that identifies a malware sample (payload) | Count: 1</Comment>
+        <IndicatorItem id="e22a2b5e-cdbf-42d5-a4bb-6dde8070a634" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">b073bd6963c36cd4ea37acf1ccd75d418ac3e293a51e8accebc96a97215ddf81</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="83c0e673-919c-4bd9-aecf-8a61c9cd5077">
+        <Comment>Malware: XWorm | Threat: Indicator that identifies a malware sample (payload) | Count: 10</Comment>
+        <IndicatorItem id="ebb23613-da7d-4366-aaeb-46529a50166c" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">0d95b622e9966d5b7d2b1625e0de594f</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a8509268-9d17-4c44-b320-400391464b90" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">a344f82ac0eb9ceeadb9b06e6e2c6255cb2ede01</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b3b664c0-4acf-4fd4-b0ac-bc9a2208ef6e" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">f11d1482e16e56c330a956b18e9a744968ca1f0ccb053b6476f32898e308b463</Content>
+        </IndicatorItem>
+        <IndicatorItem id="23ce9062-d51d-48d3-861d-0ed8d3cdc989" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">55f76cf05fa1bec4267cf9181e92c96e</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4e22d931-251b-4afb-aacd-4edfa1328d69" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">89fa36ddc0adcf8857bacfe0074003fcf5e62362</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cefab6e7-6a90-4038-8759-a51621cf6638" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">1e029eee711e1aa63facd59de6860d8096280099caabd32c39d83984f00ca5b4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="dc6d3c10-bd03-4a9f-93f4-7044f6989660" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">83e15376c487ed62360b425867a47b37</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f994942a-10c0-442c-83c0-8e7933b7ab1c" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">71a6435b10eb503615005a484cd98d54830c59e17ddcb4b24f4f0076312f46ee</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8759e3b8-ed3a-4604-bc7f-5640f9b7b70e" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">c41ac9f42218b65e02f19b2e11a34317</Content>
+        </IndicatorItem>
+        <IndicatorItem id="16237427-ae40-4201-af07-64e1c1098b60" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">578044be67e6489d663f42c5b2d4a140ed4045e9</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="d1ad123f-6ef3-41c4-b08a-f2362bab0415">
+        <Comment>Malware: Rhadamanthys | Threat: Indicator that identifies a malware sample (payload) | Count: 21</Comment>
+        <IndicatorItem id="853768e2-af7f-4179-be8d-48b4f015ff28" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">cd18a65a23188c66d9b2dfc77e19ce176e8cfc4c</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4062f1d4-ff60-42af-9b95-316cca55190d" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">922011e5bee14c255430a231669ef30e3985f4fd1fbdce87d7b6e74c6abb0293</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5f383f19-e0e3-4321-a1f8-8dba094eaea3" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">db0fc6b22ed9c65b9a8016b9edefa605</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3668c96c-4a0f-46be-85ce-0fafd9ef2dec" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">4c6003d6ac04fd2a6ac9f5d24757423b7c679aec</Content>
+        </IndicatorItem>
+        <IndicatorItem id="2992517f-1e0b-445e-93a8-b3a034b3a6dc" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">42a594010cb236b34f554ab794beb282468112bf7f234b5c0978e0dc7e5da1a3</Content>
+        </IndicatorItem>
+        <IndicatorItem id="59f410f2-532c-4a38-adf2-1dec03fd4349" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">bdd1a586fa035a41defb97c9a5c6406a</Content>
+        </IndicatorItem>
+        <IndicatorItem id="dfd57e5c-76d9-4b9f-8df4-f636ac64c8a9" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">b26367c5b3c1fa2f9be3649e4b1e9004a6720430</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6bffbb16-c359-4f30-a004-e3bf398d0e60" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">501023ffbeb8e60ac29e59b1d06398386cbcf725d7d905f59847b611b6c1f6ae</Content>
+        </IndicatorItem>
+        <IndicatorItem id="8868ad86-528b-4b4a-b199-57db8305e768" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">796a2856b5cfc1fda9d184927e3920eb</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c8fe0ff1-e6bb-4e87-9d7b-c1b96f278f0e" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">9226fbb1f3fb699ccf900d2282a0390933c03370</Content>
+        </IndicatorItem>
+        <IndicatorItem id="63540259-2f47-4711-b935-a2ed259dbc33" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">b76b8aef4cdf66c5b70a35bfa46a8a4a2b076defc69368b703e7ccfd1e29682c</Content>
+        </IndicatorItem>
+        <IndicatorItem id="edfb93a7-647d-4220-83d6-2c3bb0653ec2" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">a5bdf45e8b1618e56a6a33f5c485ec46</Content>
+        </IndicatorItem>
+        <IndicatorItem id="af312216-eec8-4217-8035-a529d8e747c4" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">600f1aed6591b778629a62a7322bdb020134881e</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e6ab1e88-a1ce-4aeb-b3c4-62b6f5f1d043" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">20573351f6544162507a7200c7110ee4ca24dbc126f8e3d7d11c67073428990e</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6c09dc81-db9a-4e19-aa4f-b07097c89687" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">020f54cdf5f25303868929b83376c832</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6dae817f-d656-4f71-9671-a4e760d69777" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">a2251a9fb3f45f434597933f48e7e1c00410bb93</Content>
+        </IndicatorItem>
+        <IndicatorItem id="91cb2210-e63e-4cf5-ba59-b33de05ba615" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">beb991401d05d83ffcd93fc92b3fe2c522493dfb4afc4fd08b6f59c73b09c86b</Content>
+        </IndicatorItem>
+        <IndicatorItem id="457334d2-c5d3-48f3-99fe-8dbe045dd9a0" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">58d5d93955a8e4298e4b9710af8bb166</Content>
+        </IndicatorItem>
+        <IndicatorItem id="69d343e5-2451-455c-b12c-5e6b2299c868" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">d80136f74199610c8780e7066374dd4e6e2f6c69</Content>
+        </IndicatorItem>
+        <IndicatorItem id="533ded0d-ce01-4081-8fab-b0126e488d76" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">9cc19abdfeed23bfda8ac18cea467746dc6e231ff041512bc92fd9846d9c3751</Content>
+        </IndicatorItem>
+        <IndicatorItem id="79c42ad4-d962-440c-9aee-d95477570008" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">26f48e8f08f8115128e90c8560ec6fe5</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="d2880050-42de-4fe5-be95-182cba8485ac">
+        <Comment>Malware: LimeRAT | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="a5d20dfd-2bb0-4749-9f5a-3fec238b6f16" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">704c056858e72bece27aea03d81dea070a239b6a</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b58ba192-c6ea-4b16-b57d-f0539953829f" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">edd435f7c653f3fc19e95b5a088f30476bac4fea1b63333902e1ec2eed6b7499</Content>
+        </IndicatorItem>
+        <IndicatorItem id="039ef64a-d533-4dc3-a91a-7bbe99c5581b" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">96adc2ba45dfff4d5d37bba5aebca86f</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="b16d9709-6288-4387-abcf-73aa9e97935a">
+        <Comment>Malware: Luca Stealer | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="e2fd84f8-dcb4-41c3-8a8d-486a7140e5dd" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">8526c53e6ac26444532bd3df7d012aa2</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c189fce6-e555-49ab-9750-3af53b5a105d" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">8914b73916971a0f3e086de8d08d8a6f0face794</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f49c4083-d230-4b4d-a099-d406bf03932a" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">e7a78fdf5808285ebcc98c2ac2831766a92560ee9674ddeb5e9f0d3f25da71cf</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="b6336b89-7f95-4a3b-9a9a-59c25993c579">
+        <Comment>Malware: ACR Stealer | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="531aabd7-be28-401d-b19a-96d3ee54fccd" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">db64b7a53fb48fd760eadeb102b6b52727bd7609fc72cea34b8f35389033d61d</Content>
+        </IndicatorItem>
+        <IndicatorItem id="833ad149-8972-451a-b21f-76fd5fc30505" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">8eb0ccecc47f50cb2484e410a5e97790</Content>
+        </IndicatorItem>
+        <IndicatorItem id="bd7a4b5a-0d5d-4fb8-a4c8-96ba2641f6be" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">79bd0949971fbf9789fa3255cf20afb2fdb5cce4</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="230193fd-a1eb-4074-aaf4-b28acab54b29">
+        <Comment>Malware: Loki Password Stealer (PWS) | Threat: Indicator that identifies a malware sample (payload) | Count: 6</Comment>
+        <IndicatorItem id="41399224-f495-40e3-8d8e-cdda044a1bd4" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">e7d469e3ccea467be36f35b3a488a9567a554456</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3e1980bf-0fc2-48dc-99a0-84cf23449a3d" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">8465a4c2a6c05ffc6679768a49175ff056fba1e6d1b72433e3c52f993bc79e2e</Content>
+        </IndicatorItem>
+        <IndicatorItem id="423c3b16-a73e-4099-aba9-4e8247f31e7e" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">14486966ca985d45d984c584aac93da6</Content>
+        </IndicatorItem>
+        <IndicatorItem id="27eaccd1-724c-4867-b0a8-c8b8e0cfad8e" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">8371fbed4ab60278db04e21179461d58e98a2b1499dc127e43017751128b1d58</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4491d492-82a5-437b-8093-d8176f2f49c7" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">65701a268829098482261dde0e74baab</Content>
+        </IndicatorItem>
+        <IndicatorItem id="0f671447-ebe3-4a0a-92fb-0538544d31f7" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">cd9fd8ff48f0e4c3c140598f1658276bd0c1f482</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="1347280c-a947-42f5-8429-64c1f86d9145">
+        <Comment>Malware: DCRat | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="3474f111-4608-4e12-b282-829fe25f0cf4" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">b85a3c572211c5db55473797173dbe8df2e0cdb0</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4c558104-0edc-4dd1-89e1-13fa9745b3d8" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">fe40cc92e71e9d75b99a55c257caccf3947a3973e82309c9f394aefe8721568f</Content>
+        </IndicatorItem>
+        <IndicatorItem id="02cd75d7-caaf-4f49-82fa-bb94b91b3427" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">0fb20f80e047492f725c8fc8607b3715</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="023149ac-88ac-440e-a890-807084eb56b5">
+        <Comment>Malware: CoffeeLoader | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="82c7e267-9cdf-42d4-86d2-9ab4dc9aab4f" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">6bb5dbe1ac45b76e80bb5652447127d4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ac37b7f8-ace9-49e4-881b-e85db8c13de1" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">98cec4336ffbff5bf6d221729a362963fb12562b</Content>
+        </IndicatorItem>
+        <IndicatorItem id="59cc6972-f5d7-475c-b366-3aaeaad8a0de" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">202e15b70ffcfa185fbd1dd4dfd412c1ea5e629aa9aefc1cc0f9a57fb6dca2ec</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="036934ba-0120-46ee-ab78-f5a05bd2d4ea">
+        <Comment>Malware: Ghost RAT | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="7b46248c-b43e-45f3-8785-7aaba938622f" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">99b4635c627170fbfd23464b84ccdfdcb5969ca2cdeee33d70b96bc67fbb03f4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="00761a64-b093-49c5-98ab-624038172e0f" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">49ffddda41eec45f19a6a43f8b19b8b4</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e0346da7-61b0-46b4-8dba-dacf856e68c3" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">90346685f53387c712e571277689886f88916e71</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="6936076a-343c-4769-9c1e-baf6a3cf2cef">
+        <Comment>Malware: ValleyRAT | Threat: Indicator that identifies a malware sample (payload) | Count: 3</Comment>
+        <IndicatorItem id="23669799-cb96-43f5-b3db-1ad64a84ac4f" condition="is">
+          <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+          <Content type="sha1">3cc89f6309454f7434f8532410a3c065d0c0d9d2</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e88030b6-a18c-4026-bc10-a00b3e4c9808" condition="is">
+          <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+          <Content type="sha256">a50c2268873a72322452c2fa0bea2401e6e3828de58a675810fbb96cb8e78125</Content>
+        </IndicatorItem>
+        <IndicatorItem id="d9dbec44-5919-4ff9-b742-b928509f914b" condition="is">
+          <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+          <Content type="md5">8eca6876999044f50e5575b4e1fc5b39</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="33ae8923-d958-4fb8-a380-046afb32bec8">
+        <Comment>Malware: AdaptixC2 | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="39321dbb-c9ce-4503-a7c0-47ca48f3d957" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">8.136.48.237:6443</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="192959e8-5414-4354-ac66-3d167502cab2">
+        <Comment>Malware: MimiKatz | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 2</Comment>
+        <IndicatorItem id="c4652178-0ec0-4b14-8a2c-367acfa844c7" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">60.205.113.167:40010</Content>
+        </IndicatorItem>
+        <IndicatorItem id="dc958f86-32cc-4b20-89fd-9feebf543a92" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">193.112.251.31:8888</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="ccab8704-c708-4903-beec-9e733b9226ea">
+        <Comment>Malware: NetSupportManager RAT | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 6</Comment>
+        <IndicatorItem id="c6ea73d2-fc46-4d75-b99c-b64fc1a4ff40" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.93.181.242:14000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="41521e2e-86d6-4a56-a6bc-7e9f6574de0f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">54.93.181.242:7000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="08125ed8-d1fc-4683-8797-58f57d8e4044" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">167.86.145.81:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c033e1f4-37c3-449a-a418-ac2402173084" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">98.82.185.184:2181</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6cfbf75d-6d43-4ac0-8757-eec56faf1ec2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">18.181.197.12:30875</Content>
+        </IndicatorItem>
+        <IndicatorItem id="48193ef4-f5ff-48d0-a989-7004d426de8f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">3.99.191.168:5672</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="c5185de5-7cc5-41ef-b173-b34122e45f99">
+        <Comment>Malware: Lumma Stealer | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 13</Comment>
+        <IndicatorItem id="917376e2-788f-4c3d-8b2f-5a207b43d80f" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">neurold.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="e3f79ea9-ccc2-4be1-a6bf-7df0b696c892" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">smiliil.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4f57f59f-576c-45f7-ab30-47adefb3377d" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">quicksp.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="80cf2a8c-cdb7-4985-ad7e-686f0457c9a4" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">cotswmr.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ecf034ad-efb4-4066-b3fa-c866f83f1fba" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">punctmc.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c59053e9-d76e-408c-9ace-9d0d0645c8c5" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">schwakf.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="370bda46-c07a-4f1d-b08f-8bae94542917" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">politoe.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="497a87eb-796b-4bcb-a9b4-7c9c9d35f65c" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">enterki.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="6b94af64-9763-415b-9ced-48c1ec985c69" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">concudv.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="db65c3dd-ab6a-47d0-a29f-6fd2556bf202" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">dabblmk.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f5c4e398-0edd-42a7-85ff-43e82717a9bf" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">maniaqr.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="1f5e9967-05a7-4107-9cae-970702376619" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">scallok.pics</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c22da914-dc9b-47e5-b816-efa962d0e126" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">jocosoj.pics</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="18082ae3-6234-4ca8-8adb-8d0f2db8cf0e">
+        <Comment>Malware: Rhadamanthys | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 3</Comment>
+        <IndicatorItem id="5809479a-7dce-43ae-a494-ef565fcdda37" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">194.58.47.98:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="b5792487-10e7-4731-be5c-e80dd359c98d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">202.71.14.181:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="de5352d4-3247-4a20-9279-713ba6586d2f" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">103.245.231.187:443</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="de81a788-9004-415a-93fc-49060cc54354">
+        <Comment>Malware: Empire Downloader | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="a73af957-36ca-4a75-aa84-737a351264ec" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">13.58.66.134:80</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="d7c9a03a-6f7a-42ee-8a61-023ff5a21fb2">
+        <Comment>Malware: Stealc | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="c9522d1e-ffed-4349-9d01-2888d55ce2b6" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">92.50.203.74:80</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="94601dbe-546d-4475-85e6-d6f1d861d522">
+        <Comment>Malware: Crimson RAT | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="859bb00f-8b1e-40d7-9a01-39594f2da309" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">45.61.151.33:32132</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="04462489-84e4-4d80-891f-613e48e7ee0a">
+        <Comment>Malware: Venom RAT | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 2</Comment>
+        <IndicatorItem id="d90dcf87-f351-4c01-b523-124490ef46a2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">134.122.129.222:5558</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a28a231a-69dd-4328-aa7e-2a5f6840395a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">94.143.231.251:2222</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="c408a28f-3dea-4d3f-b66d-32e19825db89">
+        <Comment>Malware: Quasar RAT | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 4</Comment>
+        <IndicatorItem id="d5073f5a-bf0e-4574-bb16-032163d7476c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">80.143.161.99:9215</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5f0b82e4-e763-4531-b2fd-2c7180214a56" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">195.177.94.51:4782</Content>
+        </IndicatorItem>
+        <IndicatorItem id="c10f48cc-5f15-4203-9158-17765ccf3fa5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">91.151.88.127:1604</Content>
+        </IndicatorItem>
+        <IndicatorItem id="daf56ce7-d424-47c4-aec0-f01e7fba29ef" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">75.139.0.160:9871</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="5d8d2ee6-cb4a-4dec-aaa7-a74d5d07878b">
+        <Comment>Malware: Hook | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 3</Comment>
+        <IndicatorItem id="e545e346-2d77-4540-acba-eace9017b545" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">79.137.203.101:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="17a7aee6-cf8f-4c39-8f8d-71fa37663fe1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">196.251.70.37:8089</Content>
+        </IndicatorItem>
+        <IndicatorItem id="f9966812-13d3-4ad1-bc78-9af5927a4588" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">193.222.99.115:2053</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="f376ed4a-0a0e-4d6b-bfb4-3c998638c9d4">
+        <Comment>Malware: Sliver | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 4</Comment>
+        <IndicatorItem id="1e857354-15c8-4023-936b-5355da4abb0b" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">62.133.60.93:8443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="18b68913-6f01-4405-a550-63d6e312c3b1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">62.106.66.157:8443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="85ca0af2-8e05-44a2-b098-332129ece73c" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">145.223.21.224:8443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a77b3195-893d-4e06-be38-df2d3a7d9ae2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">134.209.27.140:31337</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="e54fc9c7-c4b1-4c2d-9493-ac23ff366acd">
+        <Comment>Malware: ValleyRAT | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 10</Comment>
+        <IndicatorItem id="e1b10790-372e-4b56-8fd9-27680e528ce5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">47.115.94.234:1234</Content>
+        </IndicatorItem>
+        <IndicatorItem id="91da95bf-d4f8-4d84-897b-b9a44ec52aae" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">198.44.250.72:8888</Content>
+        </IndicatorItem>
+        <IndicatorItem id="12811428-a29f-45a8-b267-158d4d153daf" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">198.44.250.72:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="137b31af-df86-43b1-8183-76a02601be98" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">yvfei.253274554324.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5dfe2453-b1ec-4d48-b811-6bebcd365d3e" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">122.10.111.75:6666</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ec033af3-1387-4d0c-b98b-e17a0ea2acb2" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">122.10.111.75:8888</Content>
+        </IndicatorItem>
+        <IndicatorItem id="fa4ae61d-898b-4bcb-843f-3cebc9f0bd4d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">122.10.111.75:80</Content>
+        </IndicatorItem>
+        <IndicatorItem id="3c3278fc-87ec-4b86-b1eb-2b45c1ee3a2d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">198.44.250.72:6666</Content>
+        </IndicatorItem>
+        <IndicatorItem id="a06931c6-62fd-4a42-a1b0-a26f5e780ba1" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">frp-arm.com</Content>
+        </IndicatorItem>
+        <IndicatorItem id="aa6f5f95-db2a-4995-bc50-bd9abd3f6e35" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">qq.yvfei7770.com</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="9ad4b30d-66f8-4032-9afb-aaece5e5e75d">
+        <Comment>Malware: DeimosC2 | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 2</Comment>
+        <IndicatorItem id="d476de58-7093-4f72-95c3-236fe87e4b62" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">75.2.93.241:443</Content>
+        </IndicatorItem>
+        <IndicatorItem id="cfd7426e-758d-4963-9db8-1f5f479578d9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">138.2.112.76:443</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="9f4725de-3007-4c66-a0b7-9a3058abe5cb">
+        <Comment>Malware: QakBot | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="c6339c76-eb79-49c0-b48f-08120d24bce5" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">118.161.0.114:443</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="04525986-b042-4918-abb7-2e666c7a641a">
+        <Comment>Malware: CyberGate | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 5</Comment>
+        <IndicatorItem id="11a5f3a6-44ee-4705-af65-9466a493bea4" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">5.66.200.104:2000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="4cbfb89c-4beb-44fb-9795-8a469fa4c6ee" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">5.66.200.104:32123</Content>
+        </IndicatorItem>
+        <IndicatorItem id="5960e60b-9588-4ac2-8325-952ff4741abe" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">imeddtak.zapto.org</Content>
+        </IndicatorItem>
+        <IndicatorItem id="7f790a6f-67b2-410e-81e4-06d245a4e08d" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">amierdz.no-ip.biz</Content>
+        </IndicatorItem>
+        <IndicatorItem id="bdb2406a-68dd-41e0-a22f-9d8fba03c767" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">5.66.200.104:81</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="5a480489-9cc2-45f7-a202-426478cfa01a">
+        <Comment>Malware: NjRAT | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 3</Comment>
+        <IndicatorItem id="9566ae5c-7039-4e58-8ef3-6454ac396db6" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">batata123.ddns.net</Content>
+        </IndicatorItem>
+        <IndicatorItem id="ccb17836-940c-4cd1-af9f-53bf9dd5631d" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">26.175.189.135:7000</Content>
+        </IndicatorItem>
+        <IndicatorItem id="be540c35-b511-4236-bea8-06426e4a8b00" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">survey-treasurer.gl.at.ply.gg</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="58f9b031-0e5e-437f-a06e-17f9bec61fa6">
+        <Comment>Malware: Havoc | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="08fc7621-5534-409a-8646-d4cdd36ca9a1" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">154.9.228.49:443</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="f14b3246-707d-4127-ac4a-01e14a4d1a17">
+        <Comment>Malware: Shai-Hulud | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="c0183bbb-aeed-4f55-bb6c-352fe6d7015d" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">https://mainnet.solana-rpc-pool.workers.dev/</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="7dc4f65a-53b9-4c5d-8bff-da11255453ac">
+        <Comment>Malware: YiBackdoor | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="a9b044dc-23ee-49c9-b134-90af0d3be1af" condition="is">
+          <Context document="Network" search="Network/Url" type="mir"/>
+          <Content type="string">http://136.243.146.46:8898</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="99003d3b-8340-42fe-aaa7-8b09c1bf5e26">
+        <Comment>Malware: RedLine Stealer | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="f77ee348-6af1-4c1b-b6f3-3b7471e60726" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">193.233.132.32:38976</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="f1eac23b-bee7-46f6-bc9b-10d88186c9ab">
+        <Comment>Malware: MooBot | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="946d9289-5d7c-4354-b1d7-7b2ed9a5533a" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">37.114.46.96:80</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="eb0435eb-06bb-42d5-9f2e-dcdfec69b136">
+        <Comment>Malware: SectopRAT | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="fbc69d08-db37-471a-8e0d-8f6c62e68e62" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">45.61.148.117:9000</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="df1d9799-83f8-4fb3-9384-e1a95154f32d">
+        <Comment>Malware: Mirai | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 2</Comment>
+        <IndicatorItem id="d5e775cd-625e-4bf3-9843-2f1a527d1197" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">45.81.252.38:38241</Content>
+        </IndicatorItem>
+        <IndicatorItem id="9dac4b4c-2be7-405f-8b25-d48d4feea84f" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">c.loyaltyservices.lol</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="099b5589-f031-4c29-aa64-b7de0d8c6061">
+        <Comment>Malware: Bashlite | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="20d58d8f-fde4-4d33-ae4e-241a9f2697c9" condition="is">
+          <Context document="Network" search="Network/DestinationIP" type="mir"/>
+          <Content type="string">176.65.139.133:65481</Content>
+        </IndicatorItem>
+      </Indicator>
+      <Indicator operator="OR" id="c14f131b-ea1f-4754-ab93-1248d9c57af7">
+        <Comment>Malware: ERMAC | Threat: Indicator that identifies a botnet command&amp;control server (C&amp;C) | Count: 1</Comment>
+        <IndicatorItem id="ba5c6331-f719-45de-8b85-34bb576478ff" condition="is">
+          <Context document="Network" search="Network/DNS" type="mir"/>
+          <Content type="string">ai.lendermac.com</Content>
+        </IndicatorItem>
+      </Indicator>
+    </Indicator>
+  </definition>
+</ioc>
