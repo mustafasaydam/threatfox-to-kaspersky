@@ -61,20 +61,25 @@ class ThreatFoxToKasperskyConverter:
     def _get_context_for_ioc_type(self, ioc_type, threat_type):
         """IOC tipine göre context bilgisi döndür"""
         context_map = {
-            "ip:port": {
-                "document": "Network",
-                "search": "Network/DestinationIP",
+            "domain": {
+                "document": "DnsEntryItem",
+                "search": "DnsEntryItem/RecordName",
                 "content_type": "string"
             },
-            "domain": {
-                "document": "Network",
-                "search": "Network/DNS",
+            "ip:port": {
+                "document": "PortItem", 
+                "search": "PortItem/remoteIP",  
                 "content_type": "string"
             },
             "url": {
-                "document": "Network", 
-                "search": "Network/Url",
+                "document": "DnsEntryItem",  
+                "search": "DnsEntryItem/RecordName", 
                 "content_type": "string"
+            },
+            "sha256_hash": {
+                "document": "FileItem",
+                "search": "FileItem/Sha256sum",
+                "content_type": "sha256"
             },
             "md5_hash": {
                 "document": "FileItem",
@@ -85,14 +90,9 @@ class ThreatFoxToKasperskyConverter:
                 "document": "FileItem",
                 "search": "FileItem/Sha1sum", 
                 "content_type": "sha1"
-            },
-            "sha256_hash": {
-                "document": "FileItem",
-                "search": "FileItem/Sha256sum",
-                "content_type": "sha256"
             }
         }
-        
+    
         return context_map.get(ioc_type)
 
     def create_advanced_ioc_xml(self, iocs, output_path):
