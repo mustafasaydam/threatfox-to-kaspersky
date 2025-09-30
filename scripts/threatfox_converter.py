@@ -63,7 +63,7 @@ class ThreatFoxToKasperskyConverter:
         context_map = {
             "domain": {
                 "document": "DnsEntryItem",
-                "search": "DnsEntryItem/RecordName",
+                "search": "DnsEntryItem/Host",
                 "content_type": "string"
             },
             "ip:port": {
@@ -73,7 +73,7 @@ class ThreatFoxToKasperskyConverter:
             },
             "url": {
                 "document": "DnsEntryItem",  
-                "search": "DnsEntryItem/RecordName", 
+                "search": "DnsEntryItem/Host", 
                 "content_type": "string"
             },
             "sha256_hash": {
