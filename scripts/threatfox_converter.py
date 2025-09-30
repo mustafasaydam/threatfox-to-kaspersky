@@ -148,8 +148,8 @@ class ThreatFoxToKasperskyConverter:
             group_indicator.set("id", str(uuid.uuid4()))
             
             # Grup açıklaması için Comment ekle
-            comment = ET.SubElement(group_indicator, "Comment")
-            comment.text = f"Malware: {malware} | Threat: {threat_type} | Count: {len(group_iocs)}"
+            # comment = ET.SubElement(group_indicator, "Comment")
+            # comment.text = f"Malware: {malware} | Threat: {threat_type} | Count: {len(group_iocs)}"
             
             for ioc_data in group_iocs:
                 ioc_value = ioc_data.get("ioc", "").strip()
