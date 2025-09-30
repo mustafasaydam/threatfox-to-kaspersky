@@ -85,11 +85,6 @@ class ThreatFoxToKasperskyConverter:
                 "document": "FileItem",
                 "search": "FileItem/Md5sum",
                 "content_type": "md5"
-            },
-            "sha1_hash": {
-                "document": "FileItem",
-                "search": "FileItem/Sha1sum", 
-                "content_type": "sha1"
             }
         }
     
