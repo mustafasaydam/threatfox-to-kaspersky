@@ -1,9 +1,9 @@
 name: ThreatFox IOC Sync
 
 on:
-  schedule:
+  # schedule:
     # 24 saatte bir çalışacak (UTC zamanı)
-    - cron: '0 0 * * *'
+  #   - cron: '0 0 * * *'
   workflow_dispatch:  # Manuel çalıştırma için
     inputs:
       days:
